@@ -8,6 +8,6 @@
 - Spring boot starter web
 - Spring boot devtools
 - Spring boot starter TEST
-- Spring boot started JDBC
+- Spring boot starter JDBC
 - Validation API
 - Hibernate
