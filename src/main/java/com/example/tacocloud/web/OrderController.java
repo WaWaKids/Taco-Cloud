@@ -2,6 +2,7 @@ package com.example.tacocloud.web;
 
 import com.example.tacocloud.Order;
 import com.example.tacocloud.data.OrderRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,9 @@ public class OrderController {
 
     private OrderRepository orderRepo;
 
+    @Autowired
     public OrderController(OrderRepository orderRepo) {
+
         this.orderRepo = orderRepo;
     }
 
