@@ -15,7 +15,7 @@ public class TacoCloudApplication implements WebMvcConfigurer {
 	}
 
 	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
+	public void addViewControllers(ViewControllerRegistry registry) { //set default page to "home"
 		registry.addViewController("/").setViewName("home");
 	}
 }
